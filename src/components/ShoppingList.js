@@ -29,7 +29,7 @@ function ShoppingList({ items, setItems }) {
     return categoryMatch && searchMatch;
   });
 
-  return (
+  return ( 
     <div className="ShoppingList">
       <ItemForm items={items} setItems={setItems} onItemFormSubmit={handleSubmit}/>
       <Filter onSearchChange={searchChange} search={typedItem} onCategoryChange={handleCategoryChange} />
